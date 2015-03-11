@@ -7,14 +7,25 @@ set t_Co=256
 set background=dark
 colorscheme solarized
 
+" ================ Indentation ======================
+
 set list
 set listchars=eol:¬,tab:\|\ 
 
+filetype plugin indent on
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+" ================ Search ===========================
+
 set incsearch
 set hlsearch
+set ignorecase
+set smartcase
 
+" ================ Turn Off Swap Files ==============
 
-
-"filetype plugin indent on
-
-
+set noswapfile
+set nobackup
+set nowb
