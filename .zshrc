@@ -66,3 +66,5 @@ export PATH="/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/l
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+export TERM=xterm-256color
