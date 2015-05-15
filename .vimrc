@@ -2,6 +2,7 @@ execute pathogen#infect()
 filetype plugin indent on
 set laststatus=2
 
+set t_Co=256
 let g:solarized_termcolor=256
 set background=dark
 colorscheme solarized
