@@ -29,3 +29,6 @@ set smartcase
 set noswapfile
 set nobackup
 set nowb
+
+set visualbell
+set mouse=a
