@@ -41,3 +41,8 @@ set mouse=a
 set gcr=a:blinkon0
 set autoread
 set noswapfile
+
+" ================ OverLength =======================
+
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
