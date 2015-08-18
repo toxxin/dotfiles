@@ -24,6 +24,12 @@ set hlsearch
 set ignorecase
 set smartcase
 
+" ================ Ctrlp ============================
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlPLastMode'
+let g:ctrlp_extensions = ['buffertag', 'tag', 'line', 'dir']
+
 " ================ Turn Off Swap Files ==============
 
 set noswapfile
