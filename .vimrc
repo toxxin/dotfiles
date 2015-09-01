@@ -43,7 +43,7 @@ set sidescrolloff=15
 set sidescroll=1
 
 set visualbell
-set mouse=a
+set mouse=v
 set gcr=a:blinkon0
 set autoread
 set noswapfile
