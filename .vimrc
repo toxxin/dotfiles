@@ -1,6 +1,8 @@
 execute pathogen#infect()
 filetype plugin indent on
 set laststatus=2
+syntax on
+set gcr=a:blinkon0
 
 set t_Co=256
 let g:solarized_termcolor=256
