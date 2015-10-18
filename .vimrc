@@ -58,3 +58,5 @@ match OverLength /\%81v.\+/
 " ================= ErrorBell =======================
 
 set noerrorbells
+set novisualbell
+
