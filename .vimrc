@@ -9,6 +9,7 @@ let g:solarized_termcolor=256
 set background=dark
 colorscheme solarized
 
+set cursorline
 " ================ Indentation ======================
 
 set list
