@@ -1,0 +1,21 @@
+# Get serial number:
+# udevadm info -a -n /dev/ttyUSB0 | grep '{serial}' | head -n1
+
+# st-link
+ATTRS{idProduct}=="3748", ATTRS{idVendor}=="0483", MODE="666", GROUP="plugdev"
+
+# usb ftdi
+#ATTRS{idProduct}=="6001", ATTRS{idVendor}=="0403", MODE="666", GROUP="plugdev"
+
+# usb nmv
+ATTRS{idProduct}=="6001", ATTRS{idVendor}=="0403", ATTRS{serial}=="A8005Ag3", MODE="666", GROUP="plugdev", SYMLINK+="ttyUSB-nmv"
+ATTRS{idProduct}=="6001", ATTRS{idVendor}=="0403", ATTRS{serial}=="A8005Ag4", MODE="666", GROUP="plugdev", SYMLINK+="ttyUSB-nmv"
+# usb am3517evm
+ATTRS{idProduct}=="6001", ATTRS{idVendor}=="0403", ATTRS{serial}=="A70039YD", MODE="666", GROUP="plugdev", SYMLINK+="ttyUSB-evm"
+# usb ftdi-wire
+ATTRS{idProduct}=="2303", ATTRS{idVendor}=="067b", MODE="666", GROUP="plugdev", SYMLINK+="ttyUSB-wire"
+# usb ftdi-xds100v2 ti-am335x-ICE-board
+ATTRS{idProduct}=="6010", ATTRS{idVendor}=="0403", MODE="666", GROUP="plugdev", SYMLINK+="ttyUSB-ice"
+
+# usb 4-port hub
+ATTRS{idProduct}=="6011", ATTRS{idVendor}=="0403", MODE="666", GROUP="plugdev"
