@@ -15,7 +15,7 @@ ATTRS{idProduct}=="6001", ATTRS{idVendor}=="0403", ATTRS{serial}=="A70039YD", MO
 # usb ftdi-wire
 ATTRS{idProduct}=="2303", ATTRS{idVendor}=="067b", ATTRS{serial}=="0000:00:14.0", MODE="666", GROUP="plugdev", SYMLINK+="ttyUSB-wire"
 # usb ftdi-xds100v2 ti-am335x-ICE-board
-ATTRS{idProduct}=="6010", ATTRS{idVendor}=="0403", MODE="666", GROUP="plugdev", SYMLINK+="ttyUSB-ice"
+ATTRS{idProduct}=="6010", ATTRS{idVendor}=="0403", ATTRS{serial}=="FTWS9UJT", MODE="666", GROUP="plugdev", SYMLINK+="ttyUSB-ice"
 
 # usb 4-port hub
 ATTRS{idProduct}=="6011", ATTRS{idVendor}=="0403", MODE="666", GROUP="plugdev"
