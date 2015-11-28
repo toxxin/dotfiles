@@ -61,3 +61,5 @@ match OverLength /\%81v.\+/
 set noerrorbells
 set novisualbell
 
+" ================= History ========================
+set history=500
