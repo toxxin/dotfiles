@@ -65,3 +65,8 @@ set tm=500
 
 " ================= History ========================
 set history=500
+
+" ===== OPEN FILES IN DIRECTORY OF CURRENT FILE ====
+cnoremap <expr> %% expand('%:h').'/'
+map <leader>e :edit %%
+map <leader>v :view %%
