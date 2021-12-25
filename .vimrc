@@ -1,31 +1,48 @@
-execute pathogen#infect()
-filetype plugin indent on
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" The theme, first
+" Plugin 'buztard/vim-marshmallow'
+Plugin 'morhetz/gruvbox'
+
+Plugin 'vim-scripts/L9'
+Plugin 'vim-scripts/FuzzyFinder'
+Plugin 'rking/ag.vim'
+
+Plugin 'kien/ctrlp.vim'
+
+Plugin 'scrooloose/syntastic'
+
+Plugin 'Valloric/YouCompleteMe'
+
+Plugin 'tpope/vim-fugitive'
+
+Plugin 'itchyny/lightline.vim'
+
+call vundle#end()
+
+filetype plugin indent on     " Required!
+
+
 set laststatus=2
 syntax on
-set gcr=a:blinkon0
 
-set t_Co=256
-let g:solarized_termcolor=256
 set background=dark
-colorscheme solarized
 
-set cursorline
 " ================ Indentation ======================
 
 set list
 set listchars=eol:¬,tab:\|\ 
 
-filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
-"set expandtab
-
-" ================ Search ===========================
-
-set incsearch
-set hlsearch
-set ignorecase
-set smartcase
 
 " ================ Ctrlp ============================
 
@@ -33,40 +50,27 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlPLastMode'
 let g:ctrlp_extensions = ['buffertag', 'tag', 'line', 'dir']
 
-" ================ Turn Off Swap Files ==============
+" =============== Turn Off Swap Files ===============
 
 set noswapfile
 set nobackup
 set nowb
 
-" ================ Scrolling ========================
-
-set scrolloff=8         "Start scrolling when we're 8 lines away from margins
-set sidescrolloff=15
-set sidescroll=1
-
-set visualbell
-set mouse=v
-set gcr=a:blinkon0
-set autoread
-set noswapfile
-
-" ================ OverLength =======================
-
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
-
-" ================= ErrorBell =======================
+" =============== ErrorBell =========================
 
 set noerrorbells
 set novisualbell
-set t_vb=
-set tm=500
 
-" ================= History ========================
-set history=500
+" =============== Lines numeration ==================
 
-" ===== OPEN FILES IN DIRECTORY OF CURRENT FILE ====
-cnoremap <expr> %% expand('%:h').'/'
-map <leader>e :edit %%
-map <leader>v :view %%
+set number relativenumber
+
+
+set ignorecase
+set smartcase
+
+
+" Theme enable
+autocmd vimenter * ++nested colorscheme gruvbox
+
+let g:gruvbox_contrast = 'dark'
